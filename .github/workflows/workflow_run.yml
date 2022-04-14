@@ -41,9 +41,11 @@ jobs:
 
       - name: Package Install
         run: yarn install
+        working-directory: ./myapp2
 
       - name: Build
         run: yarn build
+        working-directory: ./myapp2
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
