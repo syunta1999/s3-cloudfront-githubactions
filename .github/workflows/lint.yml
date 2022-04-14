@@ -36,6 +36,7 @@ jobs:
 
       - name: Lint
         run: yarn lint
+        working-directory: ./myapp2
 
       - name: Slack Notification by NonSuccess
         uses: 8398a7/action-slack@v3
