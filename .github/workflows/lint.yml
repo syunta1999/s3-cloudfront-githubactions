@@ -33,6 +33,7 @@ jobs:
 
       - name: Package Install
         run: yarn install
+        working-directory: ./myapp2
 
       - name: Lint
         run: yarn lint
